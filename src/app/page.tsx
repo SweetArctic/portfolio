@@ -1,4 +1,4 @@
-export default Home = () => {
+const Home = () => {
   return (
     <div className="flex flex-wrap gap-4 p-4 justify-center items-center">
       <span className="w-32 h-32 flex items-center justify-center text-white font-bold" style={{ backgroundColor: '#2F4156' }}>
