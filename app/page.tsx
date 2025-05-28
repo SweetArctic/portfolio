@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import HomeSection from '@/components/HomeSection/HomeSection';
 import WorksSection from '@/components/WorkSection/WorkSection';
 import SkillsSection from '@/components/SkillsSection/skills';
+import SkillsResponsive from '@/components/SkillsSection/SkillsResponsive';
 import ContactSection from '@/components/ContactSection/ContacSection';
 
 export default function Home() {
@@ -39,10 +40,21 @@ export default function Home() {
       <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
       <HomeSection />
       <WorksSection />
+      
       <section id="skills">
-        <SkillsSection />
+        {/* Escritorio */}
+        <div className="hidden lg:block">
+          <SkillsSection />
+        </div>
+        {/* Móvil */}
+        <div className="block lg:hidden">
+          <SkillsResponsive />
+        </div>
       </section>
-      <ContactSection />
+
+      <section id="contact">
+        <ContactSection />
+      </section>
     </div>
   );
 }
