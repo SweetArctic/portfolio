@@ -1,14 +1,14 @@
 'use client';
 import { Download } from 'lucide-react';
 
-const sections = ['home', 'works', 'skills', 'contact'];
+const sections = ['home', 'works', 'experience', 'skills', 'contact'];
 
 export default function Navbar({ activeSection, scrollToSection }: { activeSection: string, scrollToSection: (id: string) => void }) {
   return (
     <nav className="fixed top-0 w-full bg-navy/90 backdrop-blur-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <span className="text-white font-bold">Portfolio</span>
+          <span className="text-white font-bold text-lg">Portfolio</span>
           <div className="flex space-x-4">
             {sections.map((section) => (
               <button

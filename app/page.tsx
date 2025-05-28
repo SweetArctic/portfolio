@@ -7,6 +7,8 @@ import WorksSection from '@/components/WorkSection/WorkSection';
 import SkillsSection from '@/components/SkillsSection/skills';
 import SkillsResponsive from '@/components/SkillsSection/SkillsResponsive';
 import ContactSection from '@/components/ContactSection/ContacSection';
+import ExperienceSection from '@/components/ExperienceSection/ExperienceSection';
+import AboutSection from '@/components/About/AboutSection';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
@@ -39,8 +41,8 @@ export default function Home() {
     <div className="min-h-screen bg-beige">
       <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
       <HomeSection />
+      <AboutSection />
       <WorksSection />
-      
       <section id="skills">
         {/* Escritorio */}
         <div className="hidden lg:block">
@@ -51,7 +53,9 @@ export default function Home() {
           <SkillsResponsive />
         </div>
       </section>
-
+      <section id="experience">
+        <ExperienceSection />
+      </section>
       <section id="contact">
         <ContactSection />
       </section>

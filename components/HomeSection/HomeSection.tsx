@@ -4,9 +4,8 @@ import { Button } from '@/components/ui/button';
 
 export default function HomeSection() {
   return (
-    <section id="home" className="pt-32 pb-20 px-4 bg-beige">
+    <section id="home" className="pt-32 pb-20 px-4 bg-beige w-[100%]">
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
-        {/* Texto */}
         <div className="flex-1 text-center lg:text-left">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-navy mb-4">
             Hi, I'm <span className="text-teal">Juan Fernando</span>
@@ -27,7 +26,6 @@ export default function HomeSection() {
           </div>
         </div>
 
-        {/* Imagen creativa */}
         <div className="relative flex-1 flex justify-center items-center">
           <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80">
             <img
