@@ -15,14 +15,26 @@ export default function HomeSection() {
             Passionate about programming and technology. I focus on developing modern solutions with a combination of a creative frontend and a robust backend. I work with technologies like React, Django, AWS, and scalable databases. I'm always looking to optimize workflow and user experience.
           </p>
           <div className="flex justify-center lg:justify-start space-x-4">
-            <Button variant="outline" size="lg" className="bg-navy text-white hover:bg-navy/90">
-              <Github className="mr-2 h-5 w-5" />
-              GitHub
-            </Button>
-            <Button variant="outline" size="lg" className="bg-teal text-white hover:bg-teal/90">
-              <Linkedin className="mr-2 h-5 w-5" />
-              LinkedIn
-            </Button>
+            <a
+              href="https://github.com/SweetArctic"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="lg" className="bg-navy text-white hover:bg-navy/90">
+                <Github className="mr-2 h-5 w-5" />
+                GitHub
+              </Button>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/juan-fernando46934/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="lg" className="bg-teal text-white hover:bg-teal/90">
+                <Linkedin className="mr-2 h-5 w-5" />
+                LinkedIn
+              </Button>
+            </a>
           </div>
         </div>
 

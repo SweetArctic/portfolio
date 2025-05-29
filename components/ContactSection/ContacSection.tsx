@@ -9,18 +9,19 @@ export default function ContactSection() {
   const email = 'juanfer46934@gmail.com';
   const formRef = useRef<HTMLFormElement>(null);
 
-   const sendEmail = (e: React.FormEvent) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formRef.current) return;
 
-    emailjs.sendForm(
-      'service_tto9upo',
-      'template_pcpttdx',
-      formRef.current,
-      '7TIMoGe-hrbB1jVwW'
-    )
-    .then(() => alert('Mensaje enviado'))
-    .catch(() => alert('Error al enviar'));
+    emailjs
+      .sendForm(
+        'service_tto9upo',
+        'template_pcpttdx',
+        formRef.current,
+        '7TIMoGe-hrbB1jVwW'
+      )
+      .then(() => alert('Mensaje enviado'))
+      .catch(() => alert('Error al enviar'));
   };
 
   return (
@@ -40,27 +41,39 @@ export default function ContactSection() {
                 </a>
               </div>
               <div className="flex space-x-4">
-                <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
-                  <Github className="mr-2 h-5 w-5" />
-                  GitHub
-                </Button>
-                <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
-                  <Linkedin className="mr-2 h-5 w-5" />
-                  LinkedIn
-                </Button>
+                <a
+                  href="https://github.com/SweetArctic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
+                    <Github className="mr-2 h-5 w-5" />
+                    GitHub
+                  </Button>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/juan-fernando46934/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
+                    <Linkedin className="mr-2 h-5 w-5" />
+                    LinkedIn
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
 
-        <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
-          <input type="text" name="name" placeholder="Your Name" className="input-style" required />
-          <input type="email" name="email" placeholder="Your Email" className="input-style" required />
-          <input type="text" name="title" placeholder="Subject" className="input-style" required />
-          <textarea name="message" placeholder="Your Message" rows={4} className="input-style" required />
-          <Button type="submit" className="w-full bg-teal text-white hover:bg-teal/90">
-            Send Message
-          </Button>
-        </form>
+          <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
+            <input type="text" name="name" placeholder="Your Name" className="input-style" required />
+            <input type="email" name="email" placeholder="Your Email" className="input-style" required />
+            <input type="text" name="title" placeholder="Subject" className="input-style" required />
+            <textarea name="message" placeholder="Your Message" rows={4} className="input-style" required />
+            <Button type="submit" className="w-full bg-teal text-white hover:bg-teal/90">
+              Send Message
+            </Button>
+          </form>
         </div>
       </div>
     </section>
