@@ -23,43 +23,43 @@ const skills = [
     name: "Next.js",
     description: "React framework for SSR and SSG",
     icon: SiNextdotjs,
-    image: "/img/1.webp"
+    image: "/img/5.png"
   },
   {
     name: "Node.js",
     description: "JavaScript runtime for backend development",
     icon: SiNodedotjs,
-    image: "/img/2.webp"
+    image: "/img/6.png"
   },
   {
     name: "Tailwind CSS",
     description: "Utility-first CSS framework",
     icon: SiTailwindcss,
-    image: "/img/1.webp"
+    image: "/img/7.png"
   },
   {
     name: "GraphQL",
     description: "API query language and runtime",
     icon: SiGraphql,
-    image: "/img/2.webp"
+    image: "/img/3.png"
   },
   {
     name: "PostgreSQL",
     description: "Relational database system",
     icon: SiPostgresql,
-    image: "/img/1.webp"
+    image: "/img/8.png"
   },
   {
     name: "Docker",
     description: "Containerization platform",
     icon: SiDocker,
-    image: "/img/2.webp"
+    image: "/img/d.png"
   },
   {
     name: "TypeScript",
     description: "Typed superset of JavaScript",
     icon: SiTypescript,
-    image: "/img/1.webp"
+    image: "/img/9.png"
   }
 ];
 
